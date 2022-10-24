@@ -16,18 +16,19 @@ namespace EmployeeWageProblem
             int empWage = 0;
             Random random = new Random();
             int empcheck = random.Next(2);
-           if (empcheck == Is_Full_Time)
+            if (empcheck == Is_Full_Time)
             {
                 Console.WriteLine("Employee is Present");
                 empHrs = 8;
             }
-           else
+            else
             {
                 Console.WriteLine("Employee is Absent ");
                 empHrs = 0;
             }
             empWage = empHrs * EMP_RATE_PER_HOUR;
-            Console.WriteLine( "EmployeeWage" +empWage);
+            Console.WriteLine("EmployeeWage" + empWage);
+
         }
     }
 }
